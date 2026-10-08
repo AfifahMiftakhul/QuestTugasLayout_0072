@@ -25,3 +25,28 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.activity3.R
+
+
+@Composable
+fun AktivitasPertama(modifier: Modifier = Modifier) {
+    Column(
+        modifier = modifier
+            .fillMaxSize()
+            .padding(top = 24.dp),
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+
+        Text(
+            text = stringResource(id = R.string.header_title),
+            fontSize = 24.sp,
+            fontWeight = FontWeight.Bold,
+            color = Color.Black
+        )
+        Text(
+            text = stringResource(id = R.string.header_subtitle),
+            fontSize = 14.sp,
+            color = Color.DarkGray
+        )
+
+        Spacer(modifier = Modifier.height(16.dp))
+

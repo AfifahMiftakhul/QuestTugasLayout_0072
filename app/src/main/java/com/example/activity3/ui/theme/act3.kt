@@ -131,6 +131,35 @@ fun CardItem(
                     .padding(horizontal = 12.dp)
             ) {
 
+                Text(
+                    text = stringResource(id = nameResId),
+                    color = Color.White,
+                    fontWeight = FontWeight.Bold,
+                    fontSize = 16.sp
+                )
+                if (infoResId != 0) {
+                    Text(
+                        text = stringResource(id = infoResId),
+                        color = Color.White,
+                        fontSize = 13.sp
+                    )
+                }
+                Text(
+                    text = stringResource(id = addressResId),
+                    color = Color.White,
+                    fontSize = 13.sp
+                )
+            }
+            Image(
+                painter = painterResource(id = imageResId),
+                contentDescription = null,
+                modifier = Modifier.size(45.dp)
+            )
+        }
+    }
+}
+
+
 
 
 

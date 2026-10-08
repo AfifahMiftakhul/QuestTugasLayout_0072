@@ -74,6 +74,25 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
             imageResId = R.drawable.singa
         )
 
+        CardItem(
+            cardColorId = R.color.card_green,
+            nameResId = R.string.name_4,
+            infoResId = R.string.phone_4,
+            addressResId = R.string.address_4,
+            imageResId = R.drawable.singa
+        )
+
+        Spacer(modifier = Modifier.weight(1f))
+
+
+        Text(
+            text = stringResource(id = R.string.footer_text),
+            fontSize = 12.sp,
+            color = Color.Gray,
+            modifier = Modifier.padding(bottom = 16.dp)
+        )
+    }
+}
 
 
 

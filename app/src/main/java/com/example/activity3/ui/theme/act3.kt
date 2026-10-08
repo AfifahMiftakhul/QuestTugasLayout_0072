@@ -50,3 +50,12 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
 
         Spacer(modifier = Modifier.height(16.dp))
 
+
+        CardItem(
+            cardColorId = R.color.card_gray,
+            nameResId = R.string.name_1,
+            infoResId = 0,
+            addressResId = R.string.address_1,
+            imageResId = R.drawable.singa
+        )
+
